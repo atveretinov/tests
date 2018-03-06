@@ -13,10 +13,14 @@ import sys
 
 def kangaroo(x1, v1, x2, v2):
 
+    # IF THE SPEED OF FIRST k LESS THEN THE SPEED OF SECOND ONE WE CAN STOP ELSE WE CONTINUE
     if v2 >= v1:
         return 'NO'
 
 
+    # IF THE DELTA WILL INCREASE ONE OF K WILL NEVER REACH THE SECOND - STOP
+    #IF THE DELTA DECREASE AND THEN INCREASE - STOP
+    #IF THE DELTA DECREASE AND THEN EQUAL 0 - YES
     newX1 = x1
     newX2 = x2
     delta = x2 - x1
