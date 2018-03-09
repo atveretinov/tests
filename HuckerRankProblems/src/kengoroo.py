@@ -11,8 +11,7 @@
 
 import sys
 
-def kangaroo(x1, v1, x2, v2):
-
+def kengoroo(x1, v1, x2, v2):
     # IF THE SPEED OF FIRST k LESS THEN THE SPEED OF SECOND ONE WE CAN STOP ELSE WE CONTINUE
     if v2 >= v1:
         return 'NO'
@@ -38,5 +37,5 @@ def kangaroo(x1, v1, x2, v2):
 
 x1, v1, x2, v2 = input().strip().split(' ')
 x1, v1, x2, v2 = [int(x1), int(v1), int(x2), int(v2)]
-result = kangaroo(x1, v1, x2, v2)
+result = kengoroo(x1, v1, x2, v2)
 print(result)
